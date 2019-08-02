@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href = "stylesheet.css">
+    <!-- Information about the site -->
+  </head>
+
+  <body>
+    <h1> WATER SAFETY </h1>
+    <img onmouseover="makeRed()" onmouseout="makeBlack()" src="Life-Preserver.png" width = "25%"></img>
+    <img onmouseover="makeRed()" src="swim.png" width = "40%"></img>
+    <img onmouseover="makeRed()" src="lifeguard.jpg" width = "30%"></img>
+    <button type="button">Click me for no reason! </button>
+    <h2 style="text-ident:25px" id="lastParagraph" onmouseout = "makeBlack()" > Did you know that drowning is the second leading preventable cause of death for children younger than 10? </h2>
+
+    <h2>Here is how you can prevent you and others from drowning
+
+</h2>
+
+<h4 id="demo">Click on a button to get a tip</h4>
+
+<button type="button" onclick='document.getElementById("demo").innerHTML = "Take a CPR class/get CPR certified"'>Tip 1</button>
+<button type="button" onclick='document.getElementById("demo").innerHTML = "Take swim lessons or join a swim team. It is also a way to stay active"'>Tip 2</button>
+<button type="button" onclick='document.getElementById("demo").innerHTML = "Watch out for younger infants at the pool or the beach whether it is someone you know or not"'>Tip 3</button>
+<button type="button" onclick='document.getElementById("demo").innerHTML = "Do NOT leave kids unintended when in the pool area"'>Tip 4</button>
+<button type="button" onclick='document.getElementById("demo").innerHTML = "Before heading in the pool if you are with an infant, make sure they have something like a lifejacket on, NEVER give a flotation device that is air blown because it can pop"'>Tip 5</button>
+<button type="button" onclick='document.getElementById("demo").innerHTML = "Click on a button to get a tip"'>RESET</button>
+    <h3 style="text-ident:25px"> How you can help - Certifications & Water Safety Foundations </h3>
+    <h5> Hand in Hand Water Safety Foundation - the goal is to decrease kids and people in general from drowning </h5>
+    <a href ="http://www.bewatersafe.org"> Hand in Hand Water Safety Awareness Foundation </a>
+    <h5> Take a CPR class and save others from drowning </h5>
+    <a href ="https://www.redcross.org/take-a-class"> Get Certified from the Red Cross</a>
+    <h5> random link </h5>
+    <a href ="https://www.buzzfeed.com/sarahaspler/how-well-do-you-know-the-lyrics-to-baby-shark?bfsource=bfocompareon"> Click this link if you feel like it</a>
+
+  <script>
+    function makeRed() {
+      var graph = document.getElementById("lastParagraph")
+      graph.style = "color:red";}
+
+      function makeBlack(element) {
+        element.style="color:black"
+      }
+  </script>
+</html>
